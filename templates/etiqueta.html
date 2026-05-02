@@ -33,32 +33,30 @@ tr:nth-child(even) td { background:#fafafa; }
 .footer { margin-top:18px; border-top:1px solid #e0e1e8; padding-top:8px; font-size:10px; color:#6b6f7a; display:flex; justify-content:space-between; }
 @media print { body { background:#fff; } .page { max-width:none; min-height:auto; } }
 
-
+.label-hero::after{background:linear-gradient(90deg,rgba(239,37,51,.86),rgba(20,22,32,.32));}.label-sheet .card h2{color:#c4001a;}
 </style>
 </head>
 <body>
 
-<div class="page commercial {{SPECIES_KEY}}">
-  <header class="hero">
-    <img class="hero-photo" src="{{SPECIES_PHOTO_URI}}" alt="{{SPECIES_LABEL}}">
+<div class="page label-sheet">
+  <header class="hero label-hero">
+    <img class="hero-photo" src="{{SPECIES_PHOTO_URI}}" alt="">
     <div class="logo-box"><img class="logo" src="{{LOGO_URI}}" alt="NANTA"></div>
     <div class="title-box">
-      <div class="kicker">{{DOC_TYPE}} · {{SPECIES_LABEL}}</div>
+      <div class="kicker">Etiqueta de pienso</div>
       <h1>{{PRODUCT}}</h1>
-      <div class="meta"><span class="pill">{{ESPECIE}}</span><span class="pill">{{SUBESPECIE}}</span><span class="pill">{{LIFESTAGE}}</span></div>
+      <div class="meta"><span class="pill">{{ESPECIE}}</span><span class="pill">{{SUBESPECIE}}</span><span class="pill">{{TIPO_DE_PIENSO}}</span></div>
     </div>
   </header>
   <img class="solapa" src="{{SOLAPA_URI}}" alt="">
   <main class="content">
     <section class="grid">
-      <article class="card full"><h2>Definición / Posicionamiento</h2>{{DEFINICION_POSICIONAMIENTO}}</article>
-      <article class="card"><h2>Beneficios</h2>{{BENEFICIOS}}</article>
-      <article class="card"><h2>Características</h2>{{CARACTERISTICAS}}</article>
-      <article class="card"><h2>Modo de empleo</h2>{{MODO_EMPLEO}}</article>
-      <article class="card"><h2>Precauciones de uso</h2>{{PRECAUCIONES_DE_USO}}</article>
-      <article class="card full"><h2>Constituyentes / Nutrientes seleccionados</h2>{{NUTRIENTES_HTML}}</article>
+      <article class="card full"><h2>Animales de destino</h2>{{ANIMALES_DE_DESTINO}}</article>
+      <article class="card full"><h2>Modo de empleo</h2>{{MODO_EMPLEO}}</article>
+      <article class="card full"><h2>Precauciones de uso y recomendaciones</h2>{{PRECAUCIONES_DE_USO}}</article>
+      <article class="card full"><h2>Datos adicionales</h2>{{SECTIONS}}</article>
     </section>
-    <div class="footer"><span>NANTA · Documento generado automáticamente</span><span>{{DATE}}</span></div>
+    <div class="footer"><span>NANTA · Etiquetado</span><span>{{DATE}}</span></div>
   </main>
 </div>
 
